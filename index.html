@@ -12,7 +12,7 @@
             background-color: #f0f0f0;
         }
         header {
-            background-color: #0078d4;
+            background-image: url(imagenes/FondoPasto.jpg);
             color: #fff;
             text-align: center;
             padding: 20px;
@@ -33,6 +33,13 @@
             max-width: 900px;
             margin: 0 auto;
             padding: 20px;
+            background-color: #fbdfc0;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+        .container2 {
+            max-width: 900px;
+            margin: 0 auto;
+            padding: 20px;
             background-color: #fff;
             box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
         }
@@ -43,17 +50,51 @@
             font-size: 24px;
           }
 
+          nav {
+            background-color: #180148; /* Cambia el color de fondo de la barra de navegación */
+            padding: 10px; /* Agrega espacio alrededor de la navegación */
+          }
+        
+          /* Estilo para los enlaces */
+          nav a {
+            text-decoration: none; /* Elimina el subrayado de los enlaces */
+            color: white; /* Cambia el color del texto a blanco */
+            margin-right: 25px; /* Agrega margen derecho para separación entre enlaces */
+          }
+
     </style>
 </head>
-<body>
+<body background="imagenes/FondoMinecraft.jpg">
     <header>
-        <h1>Ramos Magaña Miguel Angel</h1>
-        <h2>Introducción a la criptografía 1</h2>
-        <p>Soy estudiante de Ingeniería en Sistemas Computacionales. Considero que tengo buenas habilidades en comunicación, trabajo en equipo y toma de decisiones. Me gusta programar en distintos lenguajes y aprender sobre nuevas herramientas.</p>
+        <table border="0">
+            <tr> <!-- Primera fila -->
+                <td>
+                    <h1>Ramos Magaña Miguel Angel</h1>
+                    <h2>Introducción a la criptografía 1</h2>
+                    <p>Soy estudiante de Ingeniería en Sistemas Computacionales. Considero que 
+                        tengo buenas habilidades en comunicación, trabajo en equipo y toma de decisiones. 
+                        Me gusta programar en distintos lenguajes y aprender sobre nuevas herramientas.
+                    </p>
+                </td>
+                <td>
+                    <img src="imagenes/FotoMike.jpg" alt="Foto" width="225" height="240">
+                </td>
+            </tr>
+        </table>
+        <br>
+            <nav>
+                <a href="#Formacion">Formación Académica</a>
+                <a href="#Correo">Correo electrónico</a>
+                <a href="#Redes">Redes sociales</a>
+                <a href="#Hobbies">Hobbies</a>
+                <a href="#Cripto">Acerca de la criptografía</a>
+                <a href="#Curriculum">Curriculum Vitae</a>
+                <a href="#LlavesP">Mi llave pública</a>
+            </nav>
     </header>
     <br>
     <div class="container">
-        <h2>Formación Académica:</h2>
+        <h2 id="Formacion">Formación Académica:</h2>
             <ul>
                 <li>Egresado del Centro de Estudios Cinetíficos y tecnológicos No. 8 "Narcisso Bassols" como Técnico en Computación.</li>
                 <li>Actualmente estudio en la Escuela Superior de Cómputo en el Instituto Politécnico Nacional.</li>
@@ -64,7 +105,7 @@
     <br>
 
     <div class="container">
-        <h2>Correo electrónico:</h2> 
+        <h2 id="Correo">Correo electrónico:</h2> 
            <p><b>Correo gmail: </b>mramosm1700@gmail.com</p>
            <p><b>Correo institucional: </b>mramosm1700@alumno.ipn.com</p>  
            <p><b>Correo yahoo: </b>chilito_mika@yahoo.com.mx</p> 
@@ -72,7 +113,7 @@
     <br>
 
     <div class="container">
-        <h2>Redes Sociales:</h2> 
+        <h2 id="Redes">Redes Sociales:</h2> 
         <a href="https://www.facebook.com/Newland.Boy02">
             <button type="button" class="boton" style="background-color: #1690ee;">Facebook</button>
         </a>
@@ -88,7 +129,7 @@
     <br>
 
     <div class="container">
-        <h2>Hobbies:</h2>
+        <h2 id="Hobbies">Hobbies:</h2>
         <p>Actualmente mis hobbies consisten en: </p> 
             <ul>
                 <li><b>Kpop Dance Cover:</b> consiste en replicar una coreografía de baile de algún grupo de kpop.</li>
@@ -105,25 +146,48 @@
                     </center><br>
                 <li><b>Coleccionar cartas:</b> debo admitir que soy demasiado coleccionista, y cuando algo me apasiona, me gusta invertirle dinero y tiempo.</li>
                     <center>
-                        <img src="imagenes/Cartas.jpg" alt="Cartas" width="320" height="240">
+                        <img src="imagenes/Cartas.jpg" alt="Cartas" width="340" height="240">
                     </center><br>
             </ul>  
     </div>
     <br>
 
     <div class="container">
-        <h2>Curriculum Vitae:</h2> 
-        <a href="Curriculum.html" target="_blank">
-            <button type="button">Abrir curriculum vitae</button>
-        </a>
+        <h2 id="Cripto">Acerca de la criptografía:</h2> 
+            <table style="border-spacing: 10px;">
+                <tr> <!-- Primera fila -->
+                    <td>
+                        <h2>Algoritmo de César</h2>
+                        <p style="text-align: justify; font-size: 14px;">El cifrado César es un algoritmo de cifrado simple que se basa en el desplazamiento de letras en el alfabeto. El cifrado toma su nombre de Julio César, quien supuestamente lo usó para comunicarse de manera segura. El cifrado César es un tipo de cifrado de sustitución, donde cada letra en el texto original se reemplaza por una letra que se encuentra un número fijo de posiciones hacia adelante en el alfabeto.
+
+                            <br>El algoritmo de cifrado César se puede describir con los siguientes pasos:<br>
+                            <ol style="text-align: justify; font-size: 14px;">
+                                <li>Eligir un valor de desplazamiento (clave) que determine cuántas posiciones se moverán las letras en el alfabeto. Por ejemplo, si el valor de desplazamiento es 3, cada letra se moverá tres posiciones hacia adelante en el alfabeto.</li>
+                                <li>Recorrer cada letra del texto original.</li>
+                                <li>Para cada letra, aplicar el desplazamiento de acuerdo con la clave. Si la letra es una letra minúscula, se mueve en el alfabeto minúsculo; si es una letra mayúscula, se mueve en el alfabeto mayúsculo. Si se llega al final del alfabeto, se continúa desde el principio.</li>
+                                <li>Reemplazar la letra original por la letra resultante después del desplazamiento.</li>
+                                <li>Repetir los pasos 2-4 para todas las letras del texto original.</li>
+                            </ol>
+                            
+                        <p style="text-align: justify; font-size: 14px;">El proceso de descifrado es similar, pero se aplica un desplazamiento en la dirección opuesta (hacia atrás) para volver al texto original. La clave de descifrado debe ser la misma que se utilizó para cifrar.</p>
+                    </td>
+                    <td>
+                        <p style="text-align: justify; font-size: 14px;">Aquí hay un ejemplo simple en Python de cómo implementar el cifrado César:</p><img src="imagenes/CesarCodigo.jpg" alt="Cesar" width="390" height="310">
+                    </td>
+                </tr>
+            </table>
     </div>
     <br>
 
     <div class="container">
-        <h2>Llaves:</h2> 
-        <a href="Llaves.html" target="_blank">
-            <button type="button">Abrir llaves públicas</button>
-        </a>
+        <h2 id="Curriculum">Curriculum Vitae:</h2> 
+        <a href="Curriculum.html">https://ramosmaganamiguelangel.github.io/Criptografia01.github.io/Curriculum.html</a>
+    </div>
+    <br>
+
+    <div class="container">
+        <h2 id="LlavesP">Mi Llave Pública:</h2> 
+        <a href="Llaves.html">https://ramosmaganamiguelangel.github.io/Criptografia01.github.io/Llaves.html</a>
     </div>
 
 
